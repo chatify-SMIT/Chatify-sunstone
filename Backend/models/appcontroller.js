@@ -3,7 +3,6 @@ import UserModel from './user.model.js';
 import Message from './message.modal.js';
 import bcrypt from 'bcrypt';
 import jwt from 'jsonwebtoken';
-import ENV from './config.js'
 import otpGenerator from 'otp-generator';
 
 import dotenv from 'dotenv';

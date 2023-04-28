@@ -17,20 +17,19 @@ const Chat = ({ sender, receiver, userMessages }) => {
   const socketRef = useRef(null);
 
   useEffect(() => {
+
     socketRef.current = io(process.env.REACT_APP_API_URL);
-    
-    // Add the user to online users list
+
     const userId = localStorage.getItem('username');
     socketRef.current.emit('add-user', userId);
 
-    // Listen for incoming messages
     socketRef.current.on('msg-recieve', (msg) => {
-      setArrivalMessage({ sent: false, content: msg });
+        setArrivalMessage({ sent: false, content: msg });
     });
 
     return () => {
-      // Close the socket connection when the component unmounts
       socketRef.current.disconnect();
+
     };
   }, []);
 
@@ -44,7 +43,6 @@ const Chat = ({ sender, receiver, userMessages }) => {
   }, [receiver]);
 
   useEffect(() => {
-    // Scroll to the bottom of the messages when a new message arrives
     scrollRef.current?.scrollIntoView({ behavior: 'smooth' });
   }, [messages]);
 
