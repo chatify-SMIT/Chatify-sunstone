@@ -1,0 +1,147 @@
+.search-bar {
+  padding: 16px;
+  border-bottom: 1px solid #e0e0e0;
+  position: relative;
+  top: 0;
+  margin: auto;
+  height:120px;
+  width: 420px; 
+  background-color: #fcfcfc;
+  z-index: 1;
+}
+.edit:hover {
+  background-color: #ebebeb;
+}
+.chats {
+  overflow-y: scroll;
+  height: calc(100vh - 185px);
+  background-color: #fcfcfc;
+  padding-left: 10px;
+  padding-right: 10px;
+  margin-top: 10px;
+  padding-bottom: 20px;
+}
+@media (max-width: 768px) {
+  .chats {
+    overflow-y: scroll;
+    height: calc(100vh - 100px);
+    background-color: #fcfcfc;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-top: 10px;
+    padding-bottom: 20px;
+  }
+
+}
+
+
+.chats::-webkit-scrollbar {
+  width: 6px;
+}
+
+.chats::-webkit-scrollbar-track {
+  background: #f5f5f5;
+}
+
+.chats::-webkit-scrollbar-thumb {
+  background-color: #ccc;
+  border-radius: 10px;
+}
+
+.chats::-webkit-scrollbar-thumb:hover {
+  background-color: #999;
+}
+
+  body{
+    overflow: hidden;
+  }
+  .search-bar {
+    padding: 16px;
+    border-bottom: 1px solid #e0e0e0;
+      position: sticky;
+  top: 0;
+background-color: #fcfcfc;
+
+  }
+  
+  .search-bar input {
+    width: 100%;
+    padding: 8px 16px;
+    font-size: 16px;
+    flex-grow: 3;
+    border: 2px solid #e0e0e0;
+    outline: none;
+    border-radius: 5px;
+    background-color: #ffffff;
+  }
+  
+  
+
+  .chat {
+    display: flex;
+    align-items: center;
+    padding: 16px;
+    cursor: pointer;
+    border-radius: 8px;
+  }
+  
+  .chat:hover {
+    background-color: #ebebeb;
+  }
+  
+  .chat.selected {
+    background-color: #f1f1f1;
+  }
+
+  .unread .time{
+    color: green;
+    font-weight: bold;
+  }
+
+
+  .profile-picture img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-right: 16px;
+  }
+  
+  .chat-details {
+    flex-grow: 1;
+  }
+  
+  .chat-name {
+    font-weight: bold;
+    font-size: 16px;
+    margin-bottom: 4px;
+  }
+  
+  .last-message {
+    font-size: 14px;
+    color: #666;
+  }
+  
+  .time {
+    font-size: 12px;
+    color: #999;
+  }
+   .counts{
+    display: none;
+   }
+  .count{
+    display: flex;
+    color: white;
+    font-size: 10px;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    background-color: green;
+  }
+  .count-ht{
+    height: 20px;
+  }

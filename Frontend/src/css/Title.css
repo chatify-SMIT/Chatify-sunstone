@@ -1,0 +1,25 @@
+.title{
+    height:50px;
+    background-color: #f3f3f3;
+    padding: 7px;
+    padding-left: 15px;
+}
+.logo{
+    height: 30px;
+    width:auto;
+} 
+
+
+.titleico:hover {
+    background-color: #ebebeb;
+  }
+  
+
+
+.titleico{
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+}

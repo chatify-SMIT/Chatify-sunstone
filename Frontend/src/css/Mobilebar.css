@@ -1,0 +1,21 @@
+.mobileheader{
+    height: 100px;
+    overflow: hidden;
+}
+
+.mobileheader1{
+    height: 50px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.mobileheader2{
+    height: 50px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

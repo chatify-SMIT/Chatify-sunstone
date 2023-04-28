@@ -1,0 +1,13 @@
+.widget{
+    padding: 3px;
+    border-top-left-radius: 10px;
+    border-style: solid;
+    border-color: #c8c4c4;
+    border-top-width: 2px;
+    border-left-width: 2px;   
+    border-right-style: none;
+    border-bottom-style: none;
+    z-index: 2;
+    background-color:  #fcfcfc;
+
+}

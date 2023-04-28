@@ -1,0 +1,44 @@
+.sidebars {
+    position: relative;
+    height: calc(100vh - 50px);
+    width: 60px;
+    background-color: #f3f3f3;
+  }
+  
+  .top-icons {
+    top: 0;
+    height: 60px;
+    width: 100%;
+    background-color: #f3f3f3;
+  }
+  
+  .bottom-icon {
+    bottom: 0;
+    height: 60px;
+    width: 100%;
+    background-color: #f3f3f3;
+  }
+  
+  .avatar {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin: 0px;
+  }
+  
+  .picon{
+  
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    border-radius: 10px;
+  }
+  .picon:hover {
+    background-color: #c9c9c9;
+  }
+
+  .active{
+    background-color: #c9c9c9;
+    border-radius: 10px;
+  }
