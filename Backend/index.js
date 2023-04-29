@@ -1,8 +1,8 @@
 import express from 'express';
 import cors from 'cors';
 import morgan from 'morgan';
-import connect from './models/mongoconnect.js';
-import router from './models/Router.js';
+import connect from './src/mongoconnect.js';
+import router from './src/Router.js';
 import { createServer } from 'http';
 import { Server } from 'socket.io';
 import dotenv from 'dotenv';
