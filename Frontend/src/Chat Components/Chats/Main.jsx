@@ -21,6 +21,7 @@ const Main = ()=>{
 </div>
                  
             </div>
+            <div><h1 className='d-flex d-lg-none justify-content-center align-items-center flex-column'>Open on Computer</h1></div>
 
   </>  
   
