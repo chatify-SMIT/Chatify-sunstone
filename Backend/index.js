@@ -22,7 +22,7 @@ app.use(cors());
 app.use(morgan('tiny'));
 app.disable('x-powered-by');
 
-const port = 8000;
+const port = process.env.PORT;
 httpServer.listen(port, () => {
   console.log(`Server connected to http://localhost:${port}`);
 });
