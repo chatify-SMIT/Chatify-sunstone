@@ -11,12 +11,12 @@ function SignUp() {
  
 const formik = useFormik({
   initialValues : {
-    userName : "",
-    firstName : "",
-    lastName : "",
-    password : "",
-    confirmPassword : ""
-
+      userName: "",
+      firstName: "",
+      lastName: "",
+      password: "",
+      confirmPassword: "",
+      avatar: `https://picsum.photos/id/${Math.floor(Math.random() * 1000) + 1}/50/50`
   },
    validate :registerValidate,
    validateOnBlur:false,

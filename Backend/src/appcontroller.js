@@ -26,7 +26,7 @@ export async function verifyUser(req, res, next){
 
 export async function signup(req, res) {
   try {
-    const { userName, password, firstName, lastName } = req.body;
+    const { userName, password, firstName, lastName,avatar } = req.body;
 
     const existingUser = await UserModel.findOne({ userName });
 
@@ -41,7 +41,8 @@ export async function signup(req, res) {
         userName,
         password: hashedPassword,
         firstName,
-        lastName
+        lastName,
+        avatar
       });
 
       const result = await user.save();
@@ -213,7 +214,7 @@ export async function resetPassword(req, res) {
 
   export async function getAllUsers(req, res) {
     try {
-      const users = await UserModel.find({}, { firstName: 1, lastName: 1, userName: 1, _id: 1 });
+      const users = await UserModel.find({}, { firstName: 1, lastName: 1, userName: 1, _id: 1,avatar:1 });
       return res.status(200).send(users);
     } catch (error) {
       console.error(error);

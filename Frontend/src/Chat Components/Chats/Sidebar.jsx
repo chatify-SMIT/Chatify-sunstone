@@ -52,7 +52,7 @@ const Sidebar = ({ changeChat }) => {
                 name: item.userName,
                 lastName: item.lastName,
                 firstName: item.firstName,
-               
+                avatar:item.avatar,
               }))
           : [];
         setUsers(usersData);
@@ -110,7 +110,8 @@ const Sidebar = ({ changeChat }) => {
             }}>
 
               <div className="profile-picture">
-                <img src="https://picsum.photos/50" alt={user.name} />
+      
+                <img src={user.avatar} alt={user.name} />
               </div>
               <div className="chat-details">
                 <div className="chat-name">{user.firstName} {user.lastName}</div>

@@ -1,12 +1,23 @@
-import { useState } from 'react';
+import { useState,useEffect } from 'react';
 import Avatar from "react-avatar-edit";
 import { Button, Modal } from 'react-bootstrap';
 import Offcanvas from 'react-bootstrap/Offcanvas';
+import { getUserData } from '../../helper/helper';
 import '../../css/security.css'
 function Settings() {
     const [settings, setSettings] = useState(false);
     const [account, setAccount] = useState(false);
     const [accountImage, setaccountImage] = useState("https://th.bing.com/th/id/OIP.rr1IxqrICUZp0NVdweJXSAHaD3?w=281&h=180&c=7&r=0&o=5&dpr=1.4&pid=1.7");
+    const userId = localStorage.getItem('username');
+    const [receiverData, setReceiverData] = useState('');
+    useEffect(() => {
+      async function fetchData() {
+        const { data } = await getUserData({ _id: userId });
+          setReceiverData(data);
+      }
+      fetchData();
+    }, [userId]);
+
     const accountClose = () => setAccount(false);
     const settingsShow = () => {setSettings(true);setAccount(false);}
     const settingsClose = () => setSettings(false);
@@ -15,7 +26,7 @@ function Settings() {
 
     const handleClose = () => setShow(false);
     const handleShow = () => setShow(true);
-
+ 
 
 
     const [viewaccount, setviewaccount] = useState(true);
@@ -44,7 +55,7 @@ function Settings() {
         <>
         <i className={`la la-gear picon fs-4 p-2 ${settings ? 'active' : ''} `} onClick={settingsShow}></i>
         <div className="d-flex align-items-center p-2 justify-content-center"  onClick={accountShow} >
-            <img className="avatar  fs-4 p-2"src="https://picsum.photos/50"  alt="avatar" />
+            <img className="avatar  fs-4 p-2"src={receiverData.avatar}  alt="avatar" />
           </div>
   
         <Offcanvas className="settings " show={account} onHide={accountClose}>

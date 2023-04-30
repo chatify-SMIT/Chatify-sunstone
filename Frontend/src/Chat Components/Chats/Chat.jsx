@@ -89,7 +89,7 @@ const Chat = ({ sender, receiver, userMessages }) => {
     <div className="chat-window">
       <div className="chat-header d-flex flex-row ">
      <div className=" headico py-2 px-2  d-lg-none"> <i className="fas fa-arrow-left"></i></div>
-        <img className="avatar" src="https://picsum.photos/50" />
+        <img className="avatar" src={receiverData.avatar} />
         <div className="contact-info w-50 d-flex flex-column ">
           <div className="name">{receiverData.firstName} {receiverData.lastName}</div>
           <div className="status"></div>
