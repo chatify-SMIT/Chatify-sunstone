@@ -11,8 +11,8 @@ const MessageSchema = new mongoose.Schema({
     type: String,
   },
   time: {
-    type: Date,
-    default: Date.now,
+    type: String,
+    default: new Date().toLocaleTimeString([], {hour: '2-digit', minute:'2-digit'}).replace(' ', ''), 
   },
 
 });

@@ -43,7 +43,7 @@ const formik = useFormik({
           <input {...formik.getFieldProps("userName")} className='mt-3 w-100' placeholder='Phone Number or Email id' type="text"  />
           <input {...formik.getFieldProps("password")} className='mt-3 w-100' placeholder='Password'  type="password" />
           <input {...formik.getFieldProps("confirmPassword")} className='mt-3 w-100' placeholder='Confirm Password'  type="password" />
-          <button className='btn btn-success fw-bold w-auto w-100 px-3 mb-3 mt-3'> Sign up </button>
+          <button className='btn btn-success fw-bold w-auto w-100 px-3 mb-3 mt-3' type="submit"> Sign up </button>
           <Link to="/">  <div className='d-flex align-items-center fw-bold pb-2 text-dark text-decoration-none'>Already a User ? Log in
           </div> </Link> 
           </div>

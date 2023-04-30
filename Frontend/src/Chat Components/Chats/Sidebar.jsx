@@ -56,7 +56,7 @@ const Sidebar = ({ changeChat }) => {
               }))
           : [];
         setUsers(usersData);
-        console.log(usersData);
+     
       } catch (error) {
         console.log(error);
       }
@@ -66,7 +66,7 @@ const Sidebar = ({ changeChat }) => {
   }, []);
 
   useEffect(() => {
-    console.log(activeUserId);
+    
     changeChat(activeUserId);
   }, [activeUserId]);
 

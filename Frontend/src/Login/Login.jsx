@@ -22,7 +22,7 @@ function Login() {
       toast.promise(loginPromise, {
         loading: 'Checking...',
         success : <b>Login Successfully...!</b>,
-        error : <b>Password Not Match!</b>
+        error : <b>Username and Password Not Match!</b>
       });
 
       loginPromise.then(res => {
