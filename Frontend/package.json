@@ -2,6 +2,10 @@
   "name": "chatify",
   "version": "0.1.0",
   "private": true,
+  "type": "module",
+  "engines": {
+    "node":"14.x"
+  },
   "dependencies": {
     "@fortawesome/free-regular-svg-icons": "^6.4.0",
     "@fortawesome/free-solid-svg-icons": "^6.4.0",
