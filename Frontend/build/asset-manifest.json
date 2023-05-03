@@ -1,0 +1,14 @@
+{
+  "files": {
+    "main.css": "/static/css/main.ea1079b6.css",
+    "main.js": "/static/js/main.ba507233.js",
+    "static/media/chatify.png": "/static/media/chatify.f415f1f5b7ffa6d0769e.png",
+    "index.html": "/index.html",
+    "main.ea1079b6.css.map": "/static/css/main.ea1079b6.css.map",
+    "main.ba507233.js.map": "/static/js/main.ba507233.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.ea1079b6.css",
+    "static/js/main.ba507233.js"
+  ]
+}
