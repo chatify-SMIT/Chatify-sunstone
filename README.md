@@ -13,6 +13,9 @@ Chatify currently works on web platform which support different types of communi
 
 Building a chatify application typically involves a front-end programming language such as React.js and a back-end programming language such as Node.js. Chatify is developed using MongoDB as the database.
 
+## We are Live
+[**https://chatify-smit.netlify.app/**](https://chatify-smit.netlify.app/)
+
 ## Features
 - **Real-time Messaging :** User can send and receive messages in real-time.
 - **Group Messaging :** User can create and participate in group chats with multiple users.
