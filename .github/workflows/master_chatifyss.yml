@@ -52,5 +52,5 @@ jobs:
         with:
           app-name: 'chatifyss'
           slot-name: 'Production'
-          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_00AC25A9B71847C4AD3E3B1B6B5CFAAE }}
+          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_E2B4B8B9AC2742BCA7BB562F30FBA8DA }}
           package: .
